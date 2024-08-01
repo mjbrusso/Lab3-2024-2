@@ -1,3 +1,4 @@
+// Versão com template de função
 #include <iostream>
 
 using namespace std;
