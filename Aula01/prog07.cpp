@@ -25,6 +25,8 @@ int main()
     cout << s1 << ' ' << s2 << endl;
 
 	cout << "Antes: " << a << ' ' << y << endl;
+
+    
 	troca(a, y); // bugado
 	cout << "Depois: " << a << ' ' << y << endl;
 }

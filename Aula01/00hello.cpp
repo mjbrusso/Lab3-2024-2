@@ -2,6 +2,7 @@
 #include <iostream> // biblioteca de I/O
 #include <iomanip>  // formatação de I/O
 #include <string>   // string
+#include <cmath>
 
 using namespace std;
 
@@ -16,7 +17,10 @@ int main() {
     cin >> a >> b;
     c = a / b;
 
-    cout << fixed << setprecision(2) << "A: " << a << " B: " << b << " C: " << c
+    cout << fixed << setprecision(2) 
+         << "A: " << a 
+         << " B: " << b 
+         << " C: " << c
          << endl;
 
     bool teste = false;
@@ -25,6 +29,7 @@ int main() {
     cout << cidade << endl;
     cout << "Qual cidade? ";
     // cin >> cidade; // Só lê até o espaço
+
     cin.ignore();         // Descarta o ENTER do buffer
     getline(cin, cidade); // Lê toda a linha, incluindo espaços
 
