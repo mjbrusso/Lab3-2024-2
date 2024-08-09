@@ -4,7 +4,8 @@ using namespace std;
 
 template<typename T>
 T acumula(T v[], int n){
-	T acum{}; // Inicializa com valor default para o tipo
+	T acum{};
+
 	for(int i=0; i<n; i++){
 		acum += v[i];
 	}
