@@ -19,7 +19,7 @@ int main() {
     if (p == "FIM") break;
     
     if(precos.count(p)==0)
-        cout << "Não achou, sua anta!\n";
+        cout << "Não achou!\n";
     else
         cout << "Preço: " << precos[p] << endl << endl;
   }
