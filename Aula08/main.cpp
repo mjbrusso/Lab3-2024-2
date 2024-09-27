@@ -1,3 +1,4 @@
+#include <iostream>
 #include "dog.hpp"
 #include "cat.hpp"
 #include "pet.hpp"
@@ -5,23 +6,17 @@
 using namespace lab3;
 
 int main(){
-    dog d1("Ozzy");
-    d1.speak();
+    pet *mypet;
 
-    pet p("Pantufa");
-    p.speak();
+    int op;
+    std::cout << "1) Cão\n2) Gato\nEscolha: ";
+    std::cin >> op;
+    if(op==1){
+        mypet = new dog("Fred");
+    }else{
+        mypet = new cat("Fred");
+    }
+    mypet->speak();
 
-    cat m("Meowth");
-    m.speak();
+    delete mypet;
 }
-
-
-// #include "pet.hpp"
-// int main(){
-//     pet bichano("Bob");
-//     bichano.speak();
-
-//     pet *p = new pet("Anne");
-//     p->speak();
-//     delete p;
-// }

@@ -8,7 +8,7 @@ class dog : public pet {
  public:
   dog(const std::string& name) : pet(name) {}
 
-  void speak() const;
+  void speak() const override;
 };
 }  // namespace lab3
 #endif

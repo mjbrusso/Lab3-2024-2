@@ -13,18 +13,19 @@ class pet {
  public:
   // constructor
   pet(const std::string &name) : m_name{name} {
-    std::cout << m_name << " was born!\n";
+    // std::cout << m_name << " was born!\n";
   }
 
   // destructor
-  ~pet() { std::cout << m_name << " died 😭\n"; }
+  virtual ~pet() { 
+    //  std::cout << m_name << " died 😭\n"; 
+  }
 
   void set_name(const std::string &name) { m_name = name; }
 
   std::string name() const { return m_name; }
 
-  // FIXME: deve ser virtual!
-  void speak() const;
+  virtual void speak() const = 0; 
 };
 }  // namespace lab3
 #endif
