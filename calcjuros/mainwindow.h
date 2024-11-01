@@ -22,6 +22,8 @@ private slots:
 
     void on_mesesSpinBox_valueChanged(int arg1);
 
+    void on_actionSobre_triggered();
+
 private:
     Ui::MainWindow *ui;
     void calculaJuros();

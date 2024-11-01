@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -57,4 +58,23 @@ void MainWindow::on_mesesSpinBox_valueChanged(int arg1)
 {
     calculaJuros();
 }
+
+
+void MainWindow::on_actionSobre_triggered()
+{
+    // QMessageBox::about(this, "Sobre", "Calculadora de Juros");
+//    if(QMessageBox::critical(this, "Titulo", "Texto", QMessageBox::Close | QMessageBox::Help)==QMessageBox::Help){
+//        // clicou no help
+//    }
+    QMessageBox::warning(this, "sdadas", "czxcxzczxcxz");
+}
+
+
+
+
+
+
+
+
+
 
